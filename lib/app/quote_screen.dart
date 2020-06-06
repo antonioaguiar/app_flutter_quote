@@ -1,12 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/screenutil.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quotes/app/quote_widget.dart';
 import 'package:random_color/random_color.dart';
 
-class QooteScreen extends StatelessWidget {
+class QuoteScreen extends StatelessWidget {
   final Firestore _firestore = Firestore();
   final RandomColor _randomColor = RandomColor();
+
   @override
   Widget build(BuildContext context) {
      ScreenUtil.init(context, width: 350, height: 660);
